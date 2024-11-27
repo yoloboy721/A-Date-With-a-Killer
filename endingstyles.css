@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'MinecraftFont';
+  src: url('MinecraftRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.book-frame {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-frame img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.button-container {
+  position: absolute;
+  width: 100%;  /* Matches the image's width */
+  height: 100%; /* Matches the image's height */
+  transform-origin: top left; /* Ensures scaling is proportional */
+  pointer-events: none;
+}
+
+.button-container button {
+  font-family: 'MinecraftFont', sans-serif; 
+  position: absolute;
+  padding: 25px 40px; /* Adjust padding for button size */
+  background-color: rgb(241, 185, 80); /* Hex color #A0A2F2 with 80% opacity */
+  color: white; /* Text color */
+  border: 3px solid #cacf85; /* Border color matching the background */
+  font-size: 1rem; /* Font size */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition on hover */
+  pointer-events: auto; /* Allow interaction with buttons */
+}
+
+.button-top-left {
+  bottom: 6.5%;
+  left: 23%;
+}
+
+.button-bottom-right {
+  bottom: 4.5%;
+  left: 47%;
+}
+
+.button-container button:hover {
+  background-color: rgb(253, 74, 74); /* Less opacity on hover */
+  transform: scale(1.1); /* Slightly enlarges the button on hover */
+  border-color: #FFFFFF; /* Change border color on hover */
+}
+
+body {
+  background-color: #96B4D8; /* Light gray background */
+}
+

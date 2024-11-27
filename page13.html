@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Date With a Killer</title>
+  <link rel="stylesheet" href="normalstyles.css">
+  <link rel="icon" href="scarysam.png" type="image/png">
+</head>
+<body>
+    <div class="book-frame">
+      <img src="page13.jpg" alt="Book Page">
+      <div class="button-container">
+        <button class="button-top-left" onclick="goToPage('page15.html')">Pg. 15</button>
+        <button class="button-bottom-right" onclick="goToPage('page14.html')">Pg. 14</button>
+      </div>
+    </div>
+  
+    <script>
+      function goToPage(page) {
+        window.location.href = page;
+      }
+    </script>
+  </body>
+  </html>
